@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Outfit';
+    background-color: hsl(217, 54%, 11%);
+}
+img{
+    
+}
+.container{
+    width: 400px;
+    margin: 44px auto;
+    padding: 24px;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.image{
+    border-radius: 16px;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    background-color: hsla(178, 100%, 50%, 0.274);
+    padding: 152px;
+    top: 24px;
+    border-radius: 16px;
+    opacity: 0; 
+    transition: opacity .3s; 
+}
+.overlay:hover{
+    opacity: 0.4;
+}
+.container h2{
+    font-size: 24px;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    margin: 16px 0;
+    transition: color .3s;
+}
+.container h2:hover{
+    color: hsl(178, 100%, 50%);
+}
+.container p{
+    font-size: 18px;
+    font-weight: 300;
+    color:  hsl(215, 51%, 70%);
+    margin: 16px 0;
+}
+.price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    border-bottom: 2px solid hsl(215, 32%, 27%);
+}
+.price-one{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.price-one> p{
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+}
+.time{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.tag{
+    display: flex;
+    align-items: center;
+}
+.tag>img{
+    width: 36px;
+    margin-right: 10px;
+    border: 2px solid hsl(215, 32%, 27%);
+    border-radius: 40px;
+}
+.tag>p > span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+    transition: color .3s;
+}
+.tag>p > span:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+@media(max-width:48rem){
+    .container{
+        width: 80%;
+    }
+    .overlay{
+        padding: 118px;
+    }
+}
